@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.AddEditCityActivity">
+
+    <ImageView
+        android:id="@+id/imageViewCityPreview"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_margin="2dp" />
+
+    <EditText
+        android:id="@+id/editTextCityName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageViewCityPreview"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:hint="@string/name" />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutContainer1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextCityName"
+        android:layout_marginBottom="2dp"
+        android:orientation="horizontal"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp">
+
+        <EditText
+            android:id="@+id/editTextCityImgLink"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="9"
+            android:hint="@string/asking_img_link"
+            android:inputType="textWebEditText"
+            android:maxLines="1" />
+
+        <ImageButton
+            android:id="@+id/imageButtonCityPreview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:src="@android:drawable/ic_menu_view" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editTextCityDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayoutContainer1"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:hint="@string/description"
+        android:maxLength="100"
+        android:maxLines="3" />
+
+    <RatingBar
+        android:id="@+id/ratingBarCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextCityDescription"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:isIndicator="false"
+        android:numStars="5"
+        android:stepSize="0.5" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabSaveCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="16dp"
+        android:src="@android:drawable/ic_menu_save" />
+
+</RelativeLayout>

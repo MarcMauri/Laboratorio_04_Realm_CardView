@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">City World</string>
+    <string name="delete">Delete</string>
+    <string name="name">Name</string>
+    <string name="asking_img_link">Image Link... (http://myimg.com)</string>
+    <string name="description">Description</string>
+    <string name="create_city">Create New City</string>
+    <string name="edit_city">Edit City</string>
+</resources>
